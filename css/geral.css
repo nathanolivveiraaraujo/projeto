@@ -1,131 +1,316 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias com Meus Amigos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+       
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+       
+        .header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+       
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+       
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+       
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+       
+        .photo-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+       
+        .photo-card:hover {
+            transform: translateY(-10px);
+        }
+       
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+       
+        .photo-info {
+            padding: 15px;
+        }
+       
+        .photo-info h3 {
+            margin-bottom: 10px;
+            color: #ff6b6b;
+        }
+       
+        .photo-info p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+       
+        .memory-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 30px 0;
+        }
+       
+        .section-title {
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+        }
+       
+        .friends-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+       
+        .friend-card {
+            width: 200px;
+            text-align: center;
+        }
+       
+        .friend-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fad0c4;
+            margin-bottom: 15px;
+        }
+       
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+       
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+           
+            .photo-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Memórias dos Protas</h1>
+        <p>Um álbum digital de todos os momentos especiais que vivemos juntos</p>
+    </div>
+   
+    <div class="photo-grid">
+        <!-- Foto 1 -->
+        <div class="photo-card">
+            <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.56.53 (1).jpeg" alt="Amigos se divertindo">
+            <div class="photo-info">
+                <h3>Dia no Parque</h3>
+                <p>DIA NO BETO.</p>
+            </div>
+        </div>
+        <!-- Foto 1 -->
+        <div class="photo-card">
+            <img src= "C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.56.53.jpeg"alt="Amigos se divertindo">
+            <div class="photo-info">
+                <h3>Dia no Parque</h3>
+                <p>DIA NO BETO.</p>
+            </div>
+        </div>
 
-body {
-    background-color: #f5f5f5;
-    color: #333;
-}
+       <!-- Foto 1 -->
+       <div class="photo-card">
+        <img src= "C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.56.32.jpeg"alt="Amigos se divertindo">
+        <div class="photo-info">
+            <h3>Dia no Parque</h3>
+            <p>DIA NO BETO.</p>
+        </div>
+    </div>
+   
+        <!-- Foto 2 -->
+        <div class="photo-card">
+            <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-08 at 16.56.53.jpeg" alt="Amigos na praia">
+            <div class="photo-info">
+                <h3>Férias na Praia</h3>
+                <p>Nossa primeira viagem juntos. O pôr do sol foi mágico!</p>
+            </div>
+        </div>
+       
+        <!-- Foto 3 -->
+        <div class="photo-card">
+            <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-08 at 16.56.55.jpeg" alt="Festa com amigos">
+            <div class="photo-info">
+                <h3>Favs</h3>
+                <p>favs</p>
+            </div>
+        </div>
+       
+        <!-- Foto 4 -->
+        <div class="photo-card">
+            <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.56.15.jpeg" alt="Aventura com amigos">
+            <div class="photo-info">
+                <h3>UNIPRAIAS</h3>
+                <p>Quando passamos o dia no unipraias</p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="memory-section">
+        <h2 class="section-title">Os PROTAS</h2>
+        <div class="friends-container">
+            <!-- Amigo 1 -->
+            <div class="friend-card">
+                <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.35.jpeg" alt="Amigo" class="friend-avatar">
+                <h3>Rafael</h3>
+                <p>O palhaço do grupo</p>
+            </div>
+           
+            <!-- Amigo 2 -->
+            <div class="friend-card">
+                <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34.jpeg" alt="Amiga" class="friend-avatar">
+                <h3>Manu</h3>
+                <p>A organizadora de tudo</p>
+            </div>
+           
+            <!-- Amigo 3 -->
+            <div class="friend-card">
+                <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.37.12.jpeg" alt="Amigo" class="friend-avatar">
+                <h3>Júlia</h3>
+                <p>lora</p>
+            </div>
+           
+            <!-- Amigo 4 -->
+            <div class="friend-card">
+                <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34 (4).jpeg" alt="Amiga" class="friend-avatar">
+                <h3>Ana</h3>
+                <p>a mais preta</p>
+            </div>
 
-.header {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
 
-.header h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
+     <!-- Amigo 5 -->
+     <div class="friend-card">
+        <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34 (1).jpeg" alt="Amiga" class="friend-avatar">
+        <h3>Alessanda</h3>
+        <p>pegadora<p>
+        </p>
+    </div>
 
-.header p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-}
+<!-- Amigo 6 -->
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34 (2).jpeg" alt="Amiga" class="friend-avatar">
+    <h3>Lucas</h3>
+    <p>chato<p>
+    </p>
+</div>
 
-.photo-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
 
-.photo-card:hover {
-    transform: translateY(-10px);
-}
+<!-- Amigo 7 -->
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34 (3).jpeg"alt="Amiga" class="friend-avatar">
+    <h3>Maria fernanda</h3>
+    <p>carinhosa<p>
+    </p>
+</div>
 
-.photo-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
 
-.photo-info {
-    padding: 15px;
-}
+<!-- Amigo 8 -->
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 15.46.34 (5).jpeg" alt="Amigo" class="friend-avatar">
+    <h3>julio</h3>
+    <p>sincero<p>
+    </p>
 
-.photo-info h3 {
-    margin-bottom: 10px;
-    color: #ff6b6b;
-}
 
-.photo-info p {
-    color: #666;
-    font-size: 0.9rem;
-}
+    <!-- Amigo 9-->
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.49.56 (1).jpeg" alt="Amigo" class="friend-avatar">
+    <h3>Nathan</h3>
+    <p>++<p>
+    </p>
+</div>
 
-.memory-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-    margin: 30px 0;
-}
 
-.section-title {
-    font-size: 2rem;
-    color: #ff6b6b;
-    margin-bottom: 30px;
-}
+<Amigo 10
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.44.17.jpeg"alt="Amigo" class="friend-avatar">
+    <h3>JOÃO pedro</h3>
+    <p>Maluco<p>
+    </p>
+</div>
 
-.friends-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.friend-card {
-    width: 200px;
-    text-align: center;
-}
+<Amigo 11
+<div class="friend-card">
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.44.44.jpeg" alt="Amigo" class="friend-avatar">
+    <h3>Felipe</h3>
+    <p>cute<p>
+    </p>
+</div>
+</div>
 
-.friend-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fad0c4;
-    margin-bottom: 15px;
-}
 
-.memory-photo {
-    max-width: 100%;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+   
+    <div class="memory-section" style="background-color: #f8f9fa;">
+        <h2 class="section-title">Nossas Melhores Lembranças</h2>
+        <p style="max-width: 800px; margin: 0 auto 30px; line-height: 1.6;">
+            Cada momento que passamos juntos se transformou em uma memória preciosa.
+            Desde as pequenas loucuras do dia a dia até as grandes aventuras, cada
+            risada, cada conversa profunda, cada olhar de cumplicidade - tudo isso
+            construiu a história da nossa amizade.
+        </p>
+        <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-05 at 16.55.42.jpeg"="Grupo de amigos" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    </div>
+    <img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-08 at 17.13.04.jpeg"="Grupo de amigos" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+</div>
+<img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-08 at 17.13.03.jpeg"="Grupo de amigos" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+</div>
+<img src=<img src="C:\Users\202310210032\Downloads\WhatsApp Image 2025-05-08 at 17.13.03.jpeg"="Grupo de amigos" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
+</div>
+   
+    <footer>
+        <p>Memórias com Meus Amigos &copy;  - Criado com ❤️</p>
+    </footer>
+</body>
+</html>
 
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2rem;
-    }
-
-    .photo-grid {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-}
